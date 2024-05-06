@@ -1,15 +1,3 @@
-### Obtener Clientes
-GET http://localhost:3001/requestsClients
-### Obtener un Cliente
-GET http://localhost:3001/requestsClients/663811dabfa343e12da7af2e
-
-#### Eliminar un Cliente
-DELETE http://localhost:3001/requestsClients/663811dabfa343e12da7af2e
-
-### Crea una Cliente
-POST http://localhost:3001/requestsClients
-Content-Type: application/json
-
 {
     "apellidos": "fsdsdffds",
     "correo": "fsdfsd@ff",
@@ -26,4 +14,5 @@ Content-Type: application/json
     "tipo_poliza": "Poliza de Vida",
     "total_pagar": 1198569.2959857222,
     "valor_credito": 1121212
-}
+  }
+  

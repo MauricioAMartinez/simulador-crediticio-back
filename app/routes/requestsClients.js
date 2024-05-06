@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const { createRequestClient, getRequestClients, getRequestClientById, updateRequestClient, deleteRequestClient } = require('../controllers/requestsClients');
 
-router.get('/', (req, res) => {   
-    res.status(200).json({
-        status: 200,
-        message: 'Requests Clients'
-    })
-} )
+router.post('/', createRequestClient)
+router.get('/', getRequestClients)
+router.get('/:id', getRequestClientById)
+router.patch('/:id', updateRequestClient)
+router.delete('/:id', deleteRequestClient)
 
 
 module.exports = router;
